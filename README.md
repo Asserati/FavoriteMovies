@@ -11,7 +11,7 @@ After that, we have to set up our database.
 
 The database is ready for postgres use.
 
-edit these in your own liking at FavMovies-back/src/app.module.ts
+edit these by your own settings at FavMovies-back/src/app.module.ts
 
 {
 
