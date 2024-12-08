@@ -1,0 +1,29 @@
+//colors
+$color-primary: rgb(135, 0, 0);
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-lighter: lighten($color-primary, 30%);
+
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-darker: darken($color-primary, 30%);
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light: #f7f7f7;
+$color-grey-dark: rgb(19, 19, 19);
+$color-white: #fff;
+$color-black: #000;
+
+//FONT
+$font-size-base: 1.5rem;
+$font-size-large: 3rem;
+$font-size-medium: 2rem;
+$font-size-small: 1rem;
+//grid
+$content-width: 1366px;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;

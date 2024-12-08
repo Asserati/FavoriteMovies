@@ -1,0 +1,96 @@
+.favorites {
+  max-width: $content-width;
+  margin: 5rem auto;
+  padding: 16px;
+
+  &__gridContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    margin-top: -8px;
+    width: calc(100% + 8px);
+    margin-left: -8px;
+    margin-right: -8px !important;
+
+    &__item {
+      padding-left: 8px;
+      padding-top: 8px;
+      flex-basis: 25%;
+      -webkit-box-flex: 0;
+      flex-grow: 0;
+      max-width: 25%;
+
+      @include respond(tab-land) {
+        flex-basis: 33%;
+        max-width: 33%;
+      }
+      @include respond(tab-port) {
+        flex-basis: 33%;
+        max-width: 33%;
+      }
+      @include respond(phone) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      & .mediaItem {
+        &__info {
+          & .circular-rate {
+            @include respond(tab-land) {
+              display: flex;
+              justify-content: end;
+              margin-right: -5rem;
+              margin-bottom: 3rem;
+            }
+          }
+          & p {
+            @include respond(phone) {
+              font-size: $font-size-medium + 0.2;
+            }
+          }
+        }
+      }
+      &__remove {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        & button {
+          background-color: rgba($color-primary, 0.8);
+          border-radius: 1.2rem;
+          width: 95%;
+          margin-right: 0;
+          font-size: $font-size-base;
+          @include respond(tab-land) {
+            font-size: $font-size-base;
+          }
+          @include respond(tab-port) {
+            font-size: $font-size-small;
+          }
+          @include respond(phone) {
+            font-size: $font-size-base;
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: $font-size-large;
+    margin-bottom: 2rem;
+    color: $color-white;
+    &.light {
+      color: $color-black;
+    }
+  }
+  &__warning {
+    &.light {
+      color: $color-black;
+    }
+    &.dark {
+      color: $color-white;
+    }
+
+    @include respond(phone) {
+      font-size: $font-size-medium + 0.3;
+    }
+  }
+}

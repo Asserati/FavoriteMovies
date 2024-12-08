@@ -1,0 +1,44 @@
+.p-error {
+  color: rgba(214, 15, 15, 0.631);
+  @include respond(desktop) {
+    font-size: $font-size-base + 0.1;
+  }
+}
+.error-block {
+  height: 100vh;
+  width: 100%;
+  background-color: $color-black;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #ea1212;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  &.light {
+    background-color: $color-white;
+    color: $color-black;
+  }
+  h2 {
+    color: inherit;
+    font-size: 4rem;
+    margin: 0;
+  }
+  p {
+    margin: 5;
+    font-size: 3rem;
+  }
+}
+
+.error-block-icon {
+  font-size: 8rem;
+  width: 8rem;
+  height: 8rem;
+  color: #fff;
+  background-color: #ea1212;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

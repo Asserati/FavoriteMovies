@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //this defines what 1rem is
+  @include respond(widescreen) {
+    font-size: 90%;
+  }
+  @include respond(onefortyp) {
+    font-size: 80%;
+  }
+  @include respond(desktop) {
+    font-size: 75%;
+  }
+  @include respond(tab) {
+    font-size: 60%;
+  }
+  @include respond(phone) {
+    font-size: 50%;
+  }
+}
+body {
+  box-sizing: border-box;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  &.light {
+    background-color: white;
+  }
+  &.dark {
+    background-color: black;
+  }
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+}

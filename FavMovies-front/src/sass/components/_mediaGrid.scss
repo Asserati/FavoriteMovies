@@ -1,0 +1,14 @@
+.mediaGrid {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap;
+  margin-top: -8px;
+  width: calc(100% + 8px);
+  margin-left: -8px;
+  margin-right: -8px !important;
+  &__container {
+    max-width: $content-width;
+    margin: auto;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,53 @@
+.logo {
+  font-size: $font-size-medium + 0.3;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  font-family: "Rock Salt", cursive;
+
+  pointer-events: none;
+
+  @include respond(phone) {
+    font-size: $font-size-large + 1;
+  }
+  &__dark {
+    color: $color-white;
+  }
+
+  &__light {
+    color: $color-black;
+  }
+
+  &__movie {
+    color: red;
+    font-weight: 500;
+    @include respond(phone) {
+      font-size: $font-size-large;
+    }
+  }
+
+  //places of the logo
+  &__form {
+    margin-top: 2rem;
+    text-align: center;
+    @include respond(phone) {
+      font-size: $font-size-large;
+    }
+  }
+  &__header {
+    margin-right: 3.5rem;
+    font-size: 1.3rem;
+    span {
+      font-size: 1.3rem;
+    }
+
+    @include respond(phone) {
+      font-size: $font-size-medium;
+      span {
+        font-size: $font-size-medium;
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+  }
+}

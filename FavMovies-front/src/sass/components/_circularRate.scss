@@ -1,0 +1,6 @@
+.circular-rate {
+  margin-left: -2rem;
+  @include respond(tab-land) {
+    margin-bottom: -1rem;
+  }
+}

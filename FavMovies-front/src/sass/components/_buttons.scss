@@ -1,0 +1,29 @@
+.button {
+  @include button($color-primary, white);
+  background-color: $color-primary;
+  &-form {
+    @include button($color-primary, white);
+    background-color: $color-primary;
+
+    &__secondary {
+      background-color: rgba($color-primary-darker, 0.3);
+    }
+  }
+}
+
+.loadMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  button {
+    font-size: $font-size-base;
+  }
+
+  @include respond(phone) {
+    button {
+      font-size: $font-size-medium;
+    }
+  }
+}

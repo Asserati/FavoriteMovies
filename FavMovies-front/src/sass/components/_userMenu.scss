@@ -1,0 +1,33 @@
+.signin {
+  display: flex;
+  &:hover {
+  }
+  & a {
+    &:hover {
+      background-color: transparent !important;
+    }
+    & svg {
+      width: 2.2em;
+      height: 1.5em;
+      fill: $color-primary;
+      stroke: $color-primary;
+
+      margin-right: 1rem;
+    }
+  }
+  & button {
+    font-size: $font-size-base - 0.3;
+    & svg {
+      width: 1.5em;
+      height: 2em;
+      fill: $color-black;
+
+      margin-left: 1rem;
+      margin-right: 2rem;
+    }
+    background-color: $color-primary-light;
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}

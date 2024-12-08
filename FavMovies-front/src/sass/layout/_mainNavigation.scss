@@ -1,0 +1,86 @@
+.header {
+  &.isScrolled {
+    background-color: rgb(19, 19, 19);
+  }
+  &.light {
+    color: black;
+    &.isScrolled {
+      background-color: white;
+    }
+  }
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  color: white;
+  align-items: center;
+  z-index: 999;
+  //bennettfeely.com/clippy
+  //make a header background color change when scrolled 5px
+
+  &__link,
+  &__link-btn {
+    @include button($color-primary, white);
+    font-size: $font-size-base - 0.2;
+
+    &.light {
+      color: black;
+      &.active {
+        color: white;
+        &:hover {
+          background-color: $color-primary-light !important;
+        }
+      }
+      &:hover {
+        color: white;
+        background-color: $color-primary-light !important;
+        svg {
+          stroke: white;
+          stroke-width: 0.2rem;
+        }
+      }
+    }
+  }
+
+  &__themeMode {
+    margin-right: auto;
+    margin-top: 0.5rem;
+    .moon_icon {
+      stroke: white;
+      fill: white;
+      stroke-width: 0.1;
+      width: 35px;
+      height: 35px;
+      border-radius: 20px;
+      padding: 5px;
+      transition: all 0.5s ease;
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        background-color: rgba($color-white, 0.3);
+
+        transform: scale(1.1);
+      }
+    }
+    .weather-sunny_icon {
+      stroke: black;
+      fill: black;
+      stroke-width: 0.1;
+      width: 35px;
+      height: 35px;
+      border-radius: 20px;
+      padding: 5px;
+      margin-bottom: 0.5rem;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: rgba($color-white, 0.3);
+
+        transform: scale(1.1);
+      }
+    }
+  }
+}
