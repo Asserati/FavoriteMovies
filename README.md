@@ -5,7 +5,7 @@ To start the project:
 
 - download the project and open a terminal in directory ./FavMovies
   
-- run "npm install" in FavMovies-front and FavMovies-back separately
+- run "npm install" in FavMovies-front and FavMovies-back directories, separately.
   
 After that, we have to set up our database.
 
